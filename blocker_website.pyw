@@ -19,6 +19,7 @@ path=r"C:\Windows\System32\drivers\etc\hosts"
 
 while(True):
     if ((d.now().hour>=9 and d.now().hour<=12) or (d.now().hour>=15 and d.now().hour<=19)):
+        # you can edit above time to your own preferences when you wish this script to block websites
         print("FOCUS TIME!")
         with open(path,"r+") as sheet:
             page=sheet.read()
